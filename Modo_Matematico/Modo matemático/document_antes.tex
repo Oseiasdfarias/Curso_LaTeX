@@ -1,0 +1,44 @@
+\documentclass{article}
+
+\usepackage[utf8]{inputenc} % Este pacote serve para acentuação
+\usepackage[brazil]{babel} % Este pacote coloca os nomes em pt-br
+\usepackage{indentfirst} % Este pacote aplica indentação
+\usepackage[a4paper, left=1cm, right=2cm, top=2cm, bottom=3cm]{geometry} % Este pacote altera a margem do documento
+\usepackage{graphicx} % Este pacote permite adicionar figuras
+\usepackage{float} % Força o posicionamento
+\usepackage{multirow} % Mesclar linhas
+\usepackage{tabularx} % Margem da tabela
+\usepackage{amsmath} % Modo Matemático
+
+\begin{document}	
+	\title{\textbf{{\Huge Modo matemático}}} % Título
+	\author{Alexandre Nunes} % Autor
+	\date{} % Data
+	\maketitle % Criar o título, autor e data
+	\thispagestyle{empty} % Oculta a numeração da página
+	\newpage
+	
+	\setcounter{page}{1} % Começa a contar as páginas novamente
+	\pagenumbering{Roman} % altera para algarismo romano
+	\tableofcontents % Cria o sumário
+	\newpage
+	
+	\listoffigures % Lista de figuras
+	\newpage
+	
+	\listoftables % Lista de tabelas
+	\newpage
+
+	\setcounter{page}{1} % Começa a contar as páginas novamente
+	\pagenumbering{arabic} % altera para algarismo arábico
+	
+	\section{Modo matemático}
+	
+	Esta é a equação de segundo grau: $ ax^2 + bx + c = 0 $ a salução é:
+	\begin{equation*}
+		x = \frac{-b \pm \sqrt[4]{b^2 - 4a\cdot c}}{2a}
+	\end{equation*}
+	
+	
+	
+\end{document}

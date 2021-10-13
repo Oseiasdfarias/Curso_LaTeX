@@ -1,0 +1,126 @@
+\documentclass{article}
+
+\usepackage[utf8]{inputenc} % Este pacote serve para acentuação
+\usepackage[brazil]{babel} % Este pacote coloca os nomes em pt-br
+\usepackage{indentfirst} % Este pacote aplica indentação
+\usepackage[a4paper, left=1cm, right=2cm, top=2cm, bottom=3cm]{geometry} % Este pacote altera a margem do documento
+\usepackage{graphicx} % Este pacote permite adicionar figuras
+\usepackage{float} % Força o posicionamento
+\usepackage{multirow} % Mesclar linhas
+\usepackage{tabularx} % Margem da tabela
+\usepackage{amsmath} % Modo matemático
+
+\renewcommand{\sin}{\mathrm{sen\hspace{0.5mm}}}
+\renewcommand{\tan}{\mathrm{tg\hspace{0.5mm}}}
+\begin{document}	
+	\title{\textbf{{\Huge Modo matemático - matrizes}}} % Título
+	\author{Oséias Farias} % Autor
+	\date{} % Data
+	\maketitle % Criar o título, autor e data
+	\thispagestyle{empty} % Oculta a numeração da página
+	\newpage
+	
+	\setcounter{page}{1} % Começa a contar as páginas novamente
+	\pagenumbering{Roman} % altera para algarismo romano
+	\tableofcontents % Cria o sumário
+	\newpage
+	
+	\listoffigures % Lista de figuras
+	\newpage
+	
+	\listoftables % Lista de tabelas
+	\newpage
+
+	\setcounter{page}{1} % Começa a contar as páginas novamente
+	\pagenumbering{arabic} % altera para algarismo arábico
+	
+	\section{Modo matemático}
+
+    Esta é a equação de segundo grau: $ ax^2 +bx +c=0 $. A solução é:
+    \begin{equation*}
+    	x = \frac{-b \pm \sqrt{b^2 -4a\cdot c}}{2a}
+    \end{equation*}
+    
+    \begin{equation*}
+    	\begin{array}{cc}
+    	x_1 = \dfrac{-b + \sqrt{b^2 -4a\cdot c}}{2a}, & 
+    	x_2 = \dfrac{-b - \sqrt{b^2 -4a\cdot c}}{2a}
+    	\end{array}	
+    \end{equation*}
+    
+    \begin{equation*}
+    	A = \begin{matrix}
+    	1 & 0 & 0  \\
+    	0 & 1 & 0  \\
+    	0 & 0 & 1
+    	\end{matrix}    	
+    \end{equation*}
+    
+    \begin{equation*}
+	    A = \begin{bmatrix}
+	    1 & 0 & 0  \\
+	    0 & 1 & 0  \\
+	    0 & 0 & 1
+	    \end{bmatrix}    	
+    \end{equation*}
+    
+    \begin{equation*}
+	    A = \begin{pmatrix}
+	    1 & 0 & 0  \\
+	    0 & 1 & 0  \\
+	    0 & 0 & 1
+	    \end{pmatrix}    	
+    \end{equation*}
+    
+    \begin{equation*}
+	    A = \begin{vmatrix}
+	    1 & 0 & 0  \\
+	    0 & 1 & 0  \\
+	    0 & 0 & 1
+	    \end{vmatrix}    	
+    \end{equation*}
+    
+    \begin{equation*}
+	    A = \begin{Vmatrix}
+	    1 & 0 & 0  \\
+	    0 & 1 & 0  \\
+	    0 & 0 & 1
+	    \end{Vmatrix}    	
+    \end{equation*}
+    
+    \section{Redefinindo comandos seno e tangente}
+    
+    Vamos redefinir as funções matemáticas do inglês para o português\\
+    
+   \textbf{ Equação seno}
+    \begin{equation*}
+    	\sin(2x)
+    \end{equation*}
+
+    \textbf{Equação Tangente}
+    \begin{equation*}
+    \tan(2x)
+    \end{equation*}
+    
+    \textbf{Frações entre parênteses}
+    \begin{equation*}
+    	\left(\frac{2a}{3e}\right)'
+    \end{equation*}
+    
+   \textbf{ Equação entre colchetes}
+    \begin{equation*}
+    	\{2a\}
+    \end{equation*}
+    
+    \textbf{Porcentagem}
+    \begin{equation*}
+    100 \%
+    \end{equation*}
+    
+    \textbf{Sub escrito }
+	\begin{equation*}
+	x_{12}
+	\end{equation*}
+	
+
+\end{document}
