@@ -1,0 +1,41 @@
+\documentclass{article}
+
+\usepackage[utf8]{inputenc} % Este pacote serve para acentuação
+\usepackage[brazil]{babel} % Este pacote coloca os nomes em pt-br
+
+\begin{document}
+
+	\section{Listas}
+	Meu primeiro documento com listas.
+	
+	Lista não-ordenada:
+	
+	\begin{itemize}
+		\item Primeiro item.
+		\item Segundo item.
+	\end{itemize}
+
+	Lista ordenada:
+	
+	\begin{enumerate}
+		\item Primeiro item.
+		\item Segundo item.
+			\begin{itemize}
+				\item Subitem 1.
+				\item Subitem 2.
+					\begin{enumerate}
+						\item Subitem 1.
+						\item Subitem 2.
+					\end{enumerate}
+			\end{itemize}
+
+	\end{enumerate}
+
+	Listas descritivas:
+
+	\begin{description}
+		\item[Primeiro] Este é um item.
+		\item[Segundo] Este é um item.
+	\end{description}
+
+\end{document}
